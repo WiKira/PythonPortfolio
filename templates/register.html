@@ -1,0 +1,15 @@
+{% from "bootstrap5/form.html" import render_form %}
+{% include "header.html" %}
+
+<!-- Main -->
+<div id="main">
+	<!-- Two -->
+	<section id="two">
+	<h2>Register</h2>
+		<div class="row">
+			{{ render_form(form) }}
+		</div>
+	</section>
+</div>
+
+{% include "footer.html" %}

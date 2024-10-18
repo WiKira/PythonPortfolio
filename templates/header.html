@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>William Cesar - Personal Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% block styles %}
+        {{ bootstrap.load_css() }}
+		<link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/main.css') }}" />
+        {% endblock %}
+	</head>
+	<body class="is-preload">
+	<!-- Header -->
+	<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></a>
+				<h1><strong>William Cesar Soares de Camargo</strong>, um<br />
+					programador com força de vontade,<br />
+					e vontade de aprender e com bom humor.</h1>
+			</div>
+		</header>
+	</body>
+</html>

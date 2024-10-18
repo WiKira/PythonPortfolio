@@ -1,0 +1,23 @@
+{% from "bootstrap5/form.html" import render_form %}
+{% include "header.html" %}
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Two -->
+					<section id="two">
+						<h2>{{ project_loaded.title }}</h2>
+						<h3>{{ project_loaded.subtitle }}</h3>
+						<div class="row">
+							<article class="col-12 col-12-xsmall work-item">
+								<img src="{{ project_loaded.img_url }}" />
+								{{ project_loaded.description|safe }}
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="{{ url_for('index') }}" class="button">Voltar</a></li>
+						</ul>
+					</section>
+
+			</div>
+
+{% include "footer.html" %}
